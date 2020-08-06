@@ -1,0 +1,36 @@
+
+{
+  "name": "tpns_rn_plugin",
+  "version": "1.0.3",
+  "description": "react-native tpns plugin",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.code.tencent.com/tpns/XG-RN-Plugin.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "push",
+    "xgpush",
+    "tpns"
+  ],
+  "author": "rockzuo@tencent.com",
+  "license": "ISC",
+  "homepage": "https://git.code.tencent.com/tpns/XG-RN-Plugin.git#readme",
+  "peerDependencies": {},
+  "rnpm": {
+    "ios": {
+      "sharedLibraries": [
+        "libz",
+        "libc++",
+        "CoreTelephony",
+        "SystemConfiguration",
+        "UserNotifications",
+        "CoreData",
+        "CFNetwork"
+      ]
+    }
+  },
+  "dependencies": {}
+}

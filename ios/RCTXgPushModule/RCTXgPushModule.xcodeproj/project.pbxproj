@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCCA02D23F8E9C400B799D0 /* RCTXgPushModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCA02C23F8E9C400B799D0 /* RCTXgPushModule.m */; };
+		1BCCA02E23F8E9C400B799D0 /* RCTXgPushModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BCCA02B23F8E9C400B799D0 /* RCTXgPushModule.h */; };
+		1BCCA03F23F8F29700B799D0 /* XGMTACloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCCA03623F8F29700B799D0 /* XGMTACloud.framework */; };
+		1BCCA04023F8F29700B799D0 /* libXGExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCCA03A23F8F29700B799D0 /* libXGExtension.a */; };
+		1BCCA04123F8F29700B799D0 /* libXG-SDK-Cloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCCA03B23F8F29700B799D0 /* libXG-SDK-Cloud.a */; };
+		1BCCA04223F8F29700B799D0 /* libxgidfa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCCA03E23F8F29700B799D0 /* libxgidfa.a */; };
+		1BCCA04523FA433D00B799D0 /* RCTXgPushEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCA04423FA433D00B799D0 /* RCTXgPushEventQueue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BCCA02623F8E9C400B799D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1BCCA02E23F8E9C400B799D0 /* RCTXgPushModule.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1BCCA02823F8E9C400B799D0 /* libRCTXgPushModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTXgPushModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCCA02B23F8E9C400B799D0 /* RCTXgPushModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTXgPushModule.h; sourceTree = "<group>"; };
+		1BCCA02C23F8E9C400B799D0 /* RCTXgPushModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTXgPushModule.m; sourceTree = "<group>"; };
+		1BCCA03623F8F29700B799D0 /* XGMTACloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XGMTACloud.framework; sourceTree = "<group>"; };
+		1BCCA03723F8F29700B799D0 /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		1BCCA03823F8F29700B799D0 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		1BCCA03A23F8F29700B799D0 /* libXGExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXGExtension.a; sourceTree = "<group>"; };
+		1BCCA03B23F8F29700B799D0 /* libXG-SDK-Cloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK-Cloud.a"; sourceTree = "<group>"; };
+		1BCCA03C23F8F29700B799D0 /* XGPushPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPushPrivate.h; sourceTree = "<group>"; };
+		1BCCA03E23F8F29700B799D0 /* libxgidfa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libxgidfa.a; sourceTree = "<group>"; };
+		1BCCA04323FA433D00B799D0 /* RCTXgPushEventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTXgPushEventQueue.h; sourceTree = "<group>"; };
+		1BCCA04423FA433D00B799D0 /* RCTXgPushEventQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTXgPushEventQueue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BCCA02523F8E9C400B799D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCCA04223F8F29700B799D0 /* libxgidfa.a in Frameworks */,
+				1BCCA04023F8F29700B799D0 /* libXGExtension.a in Frameworks */,
+				1BCCA04123F8F29700B799D0 /* libXG-SDK-Cloud.a in Frameworks */,
+				1BCCA03F23F8F29700B799D0 /* XGMTACloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCCA01F23F8E9C400B799D0 = {
+			isa = PBXGroup;
+			children = (
+				1BCCA02A23F8E9C400B799D0 /* RCTXgPushModule */,
+				1BCCA02923F8E9C400B799D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BCCA02923F8E9C400B799D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA02823F8E9C400B799D0 /* libRCTXgPushModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BCCA02A23F8E9C400B799D0 /* RCTXgPushModule */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA03423F8F29700B799D0 /* sdk */,
+				1BCCA02B23F8E9C400B799D0 /* RCTXgPushModule.h */,
+				1BCCA02C23F8E9C400B799D0 /* RCTXgPushModule.m */,
+				1BCCA04323FA433D00B799D0 /* RCTXgPushEventQueue.h */,
+				1BCCA04423FA433D00B799D0 /* RCTXgPushEventQueue.m */,
+			);
+			path = RCTXgPushModule;
+			sourceTree = "<group>";
+		};
+		1BCCA03423F8F29700B799D0 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA03523F8F29700B799D0 /* XGPushStatistics */,
+				1BCCA03723F8F29700B799D0 /* XGPush.h */,
+				1BCCA03823F8F29700B799D0 /* ReleaseNotes.txt */,
+				1BCCA03923F8F29700B799D0 /* extesion */,
+				1BCCA03B23F8F29700B799D0 /* libXG-SDK-Cloud.a */,
+				1BCCA03C23F8F29700B799D0 /* XGPushPrivate.h */,
+				1BCCA03D23F8F29700B799D0 /* idfa */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		1BCCA03523F8F29700B799D0 /* XGPushStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA03623F8F29700B799D0 /* XGMTACloud.framework */,
+			);
+			path = XGPushStatistics;
+			sourceTree = "<group>";
+		};
+		1BCCA03923F8F29700B799D0 /* extesion */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA03A23F8F29700B799D0 /* libXGExtension.a */,
+			);
+			path = extesion;
+			sourceTree = "<group>";
+		};
+		1BCCA03D23F8F29700B799D0 /* idfa */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCA03E23F8F29700B799D0 /* libxgidfa.a */,
+			);
+			path = idfa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BCCA02723F8E9C400B799D0 /* RCTXgPushModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCCA03123F8E9C400B799D0 /* Build configuration list for PBXNativeTarget "RCTXgPushModule" */;
+			buildPhases = (
+				1BCCA02423F8E9C400B799D0 /* Sources */,
+				1BCCA02523F8E9C400B799D0 /* Frameworks */,
+				1BCCA02623F8E9C400B799D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTXgPushModule;
+			productName = RCTXgPushModule;
+			productReference = 1BCCA02823F8E9C400B799D0 /* libRCTXgPushModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BCCA02023F8E9C400B799D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Tencent;
+				TargetAttributes = {
+					1BCCA02723F8E9C400B799D0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BCCA02323F8E9C400B799D0 /* Build configuration list for PBXProject "RCTXgPushModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BCCA01F23F8E9C400B799D0;
+			productRefGroup = 1BCCA02923F8E9C400B799D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BCCA02723F8E9C400B799D0 /* RCTXgPushModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BCCA02423F8E9C400B799D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCCA02D23F8E9C400B799D0 /* RCTXgPushModule.m in Sources */,
+				1BCCA04523FA433D00B799D0 /* RCTXgPushEventQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BCCA02F23F8E9C400B799D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BCCA03023F8E9C400B799D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BCCA03223F8E9C400B799D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 299MFJ63GP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/XGPushStatistics",
+				);
+				HEADER_SEARCH_PATHS = "/Users/zq/Workspace/testProject/node_modules/react-native/React/Base/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/extesion",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/idfa",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BCCA03323F8E9C400B799D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 299MFJ63GP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/XGPushStatistics",
+				);
+				HEADER_SEARCH_PATHS = "/Users/zq/Workspace/testProject/node_modules/react-native/React/Base/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/extesion",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk",
+					"$(PROJECT_DIR)/RCTXgPushModule/sdk/idfa",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BCCA02323F8E9C400B799D0 /* Build configuration list for PBXProject "RCTXgPushModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCCA02F23F8E9C400B799D0 /* Debug */,
+				1BCCA03023F8E9C400B799D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCCA03123F8E9C400B799D0 /* Build configuration list for PBXNativeTarget "RCTXgPushModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCCA03223F8E9C400B799D0 /* Debug */,
+				1BCCA03323F8E9C400B799D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BCCA02023F8E9C400B799D0 /* Project object */;
+}
