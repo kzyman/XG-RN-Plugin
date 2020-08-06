@@ -155,7 +155,14 @@ RCT_EXPORT_METHOD(setBadge:(int)badgeSum)
 }
 
 //=====================================================================================
+//========================================设置应用显示角标======================================
 
+RCT_EXPORT_METHOD(setXgApplicationBadgeNumber:(int)badgeSum)
+{
+    [[XGPush defaultManager] setXgApplicationBadgeNumber:badgeSum];
+}
+
+//=====================================================================================
 
 RCT_EXPORT_METHOD(unRegisteredCallback:(RCTResponseSenderBlock)callback){
   unRegistered = callback;

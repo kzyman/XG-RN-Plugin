@@ -262,7 +262,7 @@ public class XgPushModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void setMzPushAppId(String appId) {
         Log.i(TAG, "setMzPushAppId()");
-        XGPushConfig.setMiPushAppId(reactContext, appId);
+        XGPushConfig.setMzPushAppId(reactContext, appId);
     }
 
 

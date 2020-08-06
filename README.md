@@ -1,5 +1,5 @@
 # XG-RN-Plugin
-
+克隆腾讯推送,如有侵权等问题，请及时联系我。
 ## 1.安装:
 
     cd rn工程目录
@@ -81,14 +81,21 @@
     static updateBindIdentifiers(identifys, bindType)
 ```
 
-#### 设置角标仅iOS
+#### 上报角标仅iOS
 
 	/// 上报角标仅iOS
     /// @param badgeSum int类型
-```dart
+```
     static setBadge(badgeSum)
 ```
 
+#### 设置应用显示角标仅iOS
+
+	/// 设置应用的角标个数显示仅iOS
+    /// @param badgeSum int类型
+```
+    static setXgApplicationBadgeNumber(badgeSum)
+```
 
 ## 3.使用:
 ###   iOS:

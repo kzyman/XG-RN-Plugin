@@ -32,6 +32,10 @@ const OnReceiveNotificationResponse    = 'onReceiveNotificationResponse'
 const OnReceiveMessage                 = 'onReceiveMessage'
 /// 设置角标回调仅iOS
 const XgPushDidSetBadge      		   = 'xgPushDidSetBadge'
+
+/// 设置角标回调仅iOS
+const XgPushDidSetApplicationBadge     = 'XgPushDidSetApplicationBadge'
+
 /// 绑定账号和标签回调
 const XgPushDidBindWithIdentifier      = 'xgPushDidBindWithIdentifier'
 /// 解绑账号和标签回调
@@ -181,10 +185,22 @@ export default class XgPush {
         if (Platform.OS == "ios") {
             XgPushModule.setBadge(badgeSum)
         } else {
-
+            //
         }
     }
 
+    /* ======设置应用显示角标仅iOS====== */
+
+
+    /// 设置应用显示角标仅iOS
+    /// @param badgeSum int类型
+    static setXgApplicationBadgeNumber(badgeSum) {
+        if (Platform.OS == "ios") {
+            XgPushModule.setXgApplicationBadgeNumber(badgeSum)
+        } else {
+            //
+        }
+    }
 
     /* ======信鸽callback====== */
 
@@ -233,6 +249,14 @@ export default class XgPush {
     static addXgPushDidSetBadgeListener(callback) {
         listeners[callback] = DeviceEventEmitter.addListener(
             XgPushDidSetBadge, result => {
+                callback(result)
+            })
+    }
+
+    /// 设置应用显示角标回调仅iOS
+    static addXgPushDidSetApplicationBadgeListener(callback) {
+        listeners[callback] = DeviceEventEmitter.addListener(
+            XgPushDidSetApplicationBadge, result => {
                 callback(result)
             })
     }
